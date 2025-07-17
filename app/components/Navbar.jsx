@@ -37,7 +37,7 @@ const Navbar = () => {
           <li><a className='font-Ovo' href="#services">My Services</a> </li>
           <li><a className='font-Ovo' href="#work">My Projects</a> </li>
           <li><a className='font-Ovo' href="#contact">Contact</a> </li>
-          <li><a className='font-Ovo' href="#resume">Resume</a> </li>
+          
         </ul>
 
         <div className='flex items-center gap-4'>
