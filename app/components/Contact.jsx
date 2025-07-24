@@ -42,9 +42,9 @@ const Contact = () => {
       </p>
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
-        <input type="text" placeholder='Enter your Name :' required className='flex-1 p-3 outline-none 
+        <input suppressHydrationWarning type="text" placeholder='Enter your Name :' required className='flex-1 p-3 outline-none 
         border-[0.5px] border-gray-400 rounded-md bg-white ' name='name'/>
-        <input type="email" placeholder='Enter your Email :' required className='flex-1 p-3 outline-none 
+        <input suppressHydrationWarning type="email" placeholder='Enter your Email :' required className='flex-1 p-3 outline-none 
         border-[0.5px] border-gray-400 rounded-md bg-white 'name='email'/>
         </div>
         <textarea rows={6} placeholder='Enter your message : ' required
