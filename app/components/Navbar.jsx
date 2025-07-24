@@ -25,13 +25,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     <>
       {/* Decorative header background (light mode only) */}
       <div className='fixed right-0 top-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
-        <Image src={assets.header_bg_color} alt='' className='w-full' />
+        <Image src={assets.header_bg_color} alt='bgcolorheader' className='w-full' />
       </div>
 
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition duration-300 
-      ${isScroll 
-    ? "bg-white dark:bg-darkTheme bg-opacity-50 backdrop-blur-lg shadow-sm" 
-    : "bg-white dark:bg-darkTheme bg-opacity-50 shadow-sm"}`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition duration-300
+  ${isScroll ? 'bg-white dark:bg-darkTheme backdrop-blur-lg shadow-sm': 'bg-white dark:bg-darkTheme shadow-sm'}`}>
+      
         <a href="#top">
           <Image src={assets.logo} alt="logo" className="w-28 cursor-pointer mr-14" />
         </a>
@@ -72,7 +71,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           bg-rose-50 dark:bg-darkTheme transition duration-500 dark:bg-darkHover dark:"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
-            <Image src={assets.close_black} alt="closeblack" className="w-5 cursor-pointer" />
+            <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="closeblack" className="w-5 cursor-pointer" />
           </div>
 
           <li><a className="font-Ovo" onClick={closeMenu} href="#top">Home</a></li>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 *{
-   font-family: Outfit;
+   font-family: Outfit, sans-serif;
 }
 
 /* Light mode styles */
