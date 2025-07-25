@@ -8,10 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightHover: '#fcf4ff',
+        darkPurple: '#1a002f',    // for navbar background
+        darkTheme: '#11001F',     // for body background
         darkHover: '#2a004a',
-        darkTheme: '#11001F',
-        darkPurple: '#1a002f',
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
